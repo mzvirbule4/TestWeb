@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {font-family: "Lato", sans-serif; text-align: center; }
-.mySlides {display: none}
+.myDiv {BACKGROUND-COLOR:lightgrey}
 </style>
 </head>
 <body>
@@ -18,7 +18,7 @@ body {font-family: "Lato", sans-serif; text-align: center; }
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">GIMP</a>
+    <a href="" class="w3-bar-item w3-button w3-padding-large">GIMP</a>
     <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WORD</a>
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXCEL</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HTML</a>
@@ -34,22 +34,8 @@ body {font-family: "Lato", sans-serif; text-align: center; }
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-      <img src="images/top_img.jfif" style="width:60%">
-
-  </div>
+<div class="w3-content" style="max-width:2000px;margin-top:200px"> 
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
@@ -82,41 +68,6 @@ body {font-family: "Lato", sans-serif; text-align: center; }
 <!-- End Page Content -->
 <div>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 
 
 <br>
@@ -124,17 +75,18 @@ window.onclick = function(event) {
 <br><!-- comment -->
 <br>
 
-<div>
+<div class="myDiv">
     <h2> GIMP </h2>
     <p> GIMP ir attēlu rediģēšanas aplikācija,kas ir bezmaksas un atvērtā koda rastra grafikas redaktors,
         ko izmanto attēlu apstrādei (retouching) un attēlu rediģēšanai, brīvas formas zīmēšanai,<br> dažādu attēlu failu 
         formātu pārkodēšanai un specializētākiem uzdevumiem. Tas ir paplašināms, izmantojot spraudņus, un skriptējams.
         Tas parasti nav paredzēts zīmēšanai, lai gan mūsu klase to izmantoja arī tādā veidā.</p>
-    
-    <img src="images/BILDE.jpg"> 
+    <img src="images/gimp_ss.PNG">
+
+    <br>
     <br><!-- comment -->
-    <img src="images/VARDS.jpg" style="width:15%">
-    
+    <br><!-- comment -->
+     <br> 
 </div><!-- comment -->
 <div>
  
@@ -144,19 +96,96 @@ window.onclick = function(event) {
     <br>
     <br>
     <br> 
-    <br> 
-    <br>
-    
-    
+   
+    <div class="myDiv">
     <h2> WORD </h2>
     <p> Microsoft Word ir Microsoft izstrādāta tekstapstrādes programma.
         Pirmo reizi tas tika izlaists 1983. gada 25. oktobrī ar nosaukumu Multi-Tool Word Xenix sistēmām.<br>
         Turpmākās versijas vēlāk tika rakstītas vairākām citām platformām. 
         WORD ir oficiālā tekstapstrādes programma, ko izmantojām arī mēs. Par to mums bija PD 22.11.2025 </p>
-    <img src="images/word_logo.jfif">
     
+
+    <img src="images/KD_word_ss.PNG">
+      <br>
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <br>
     
-       
+    </div> 
+     <br>
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <div class="myDiv">
+    <h2> EXCEL </h2>
+    <p> Microsoft Excel ir Microsoft izstrādāts izklājlapu redaktors operētājsistēmai Windows, macOS, Android, iOS un iPadOS. Tajā ir aprēķinu
+        vai skaitļošanas iespējas, grafiku veidošanas rīki, rakurstabulas un makro programmēšanas valoda, ko sauc par Visual Basic for
+        Applications (VBA). Programma Excel ir daļa no Microsoft 365 un Microsoft Office programmatūras komplektiem un tiek izstrādāta kopš 1985. gada.
+        Šajā tēmā mēs Pārbaudes Darbu rakstījām 24.01.2025.</p>
+ 
+    <img src="images/KD_excel_ss.PNG">
+      <br>
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <br>
+</div>
+      <br>
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <br>
+    
+    <div class="myDiv">
+        <h2> HTML </h2>
+        <p>Hiperteksta iezīmēšanas valoda jeb HTML (no angļu: HyperText Markup Language)
+        ir iezīmēšanas valoda, kas ir izstrādāta tīmekļa lappušu un citas pārlūkprogrammā attēlojamas informācijas glabāšanai.
+        Ar šo joprojām strādājam ;)). PD būs par šo, kā arī viens 21.03.2024.!!</P><!-- comment -->
+
+       <!-- comment -->
+        <img src="images/github_ss.PNG">
+           <br>
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <br>
+    </div>
+    
+      <br>
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <div class="myDiv"> 
+        <h2> Inkscape </h2>
+        <p>Inkscape ir vektorgrafikas redaktors. To izmanto gan mākslinieciskām, gan tehniskām ilustrācijām, piemēram, karikatūrām
+        , klipkopām, logotipiem, tipogrāfijām, diagrammām un blokshēmām. Tas izmanto vektorgrafiku, lai nodrošinātu asas izdrukas un atveidojumus
+        neierobežotā izšķirtspējā,un tas nav saistīts ar noteiktu pikseļu skaitu, piemēram, rastra grafika.
+        Tā ir bezmaksas un atvērtā koda programmatūra. Mēs šo aplikāciju izmantojām grupu darba ietvaros, lai veidotu mūsu izdomātā biznesa logo.
+        </p>
+        <img src="images/inkscape_ss.PNG">
+    </div>
+      <br>
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <br>
+    <div class="myDiv">
+        <h2> TinkerCad</h2>
+        <p> Tinkercad ir bezmaksas tiešsaistes 3D modelēšanas programma, kas darbojas tīmekļa pārlūkprogrammā.
+            Mēs šo lietojām, lai veidotu puzli - mūsu kompānijas suvenīru </p>
+        <img src="images/puzlegabalins_zvirbule.jpg">
+          <br>
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <br>
+    </div>
+      <br>
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <div> 
+        <h2> Video</h2>
+    Taisījām arī video. Veidots ar wave.video.
+    Diemžēl nemāku lasīt instrukcijas un, tāpēc šajā 
+    video netika iesaistīta individuālās tēmas reklāma, jo es nezināju, ka tādai jābūt
+    
+    </div>
     
 </div>  
 </div>
