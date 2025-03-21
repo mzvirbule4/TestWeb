@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
 <title>MANS DATORIKAS PORTFOLIO</title>
+<link rel="stylesheet" href="mansStils.css" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif; text-align: center; }
-.myDiv {BACKGROUND-COLOR:lightgrey}
-</style>
+
 </head>
 <body>
 
@@ -18,16 +16,17 @@ body {font-family: "Lato", sans-serif; text-align: center; }
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="" class="w3-bar-item w3-button w3-padding-large">GIMP</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WORD</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXCEL</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HTML</a>
+    <a href="#GIMP" class="w3-bar-item w3-button w3-padding-large">GIMP</a>
+    <a href="#WORD" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WORD</a>
+    <a href="#EXCEL" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXCEL</a>
+    <a href="#GIF" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GIF</a>
+    <a href="#HTML" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HTML</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More"> GRUPAS DARBS <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Inkscape</a>
-        <a href="#" class="w3-bar-item w3-button">TinkerCad</a>
-        <a href="#" class="w3-bar-item w3-button">Video</a>
+        <a href="#Inkscape" class="w3-bar-item w3-button">Inkscape</a>
+        <a href="#TinkerCad" class="w3-bar-item w3-button">TinkerCad</a>
+        <a href="#Video" class="w3-bar-item w3-button">Video</a>
       </div>
     </div>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
@@ -43,7 +42,7 @@ body {font-family: "Lato", sans-serif; text-align: center; }
     <p class="w3-opacity"><i>Marta Zvirbule</i></p>
     <p class="w3-justify"> Šī ir mājaslapa par visu, ko mūsu datorikas grupa ir šogad darījusi un to, kas jauns. Ieskaitot pašus darbus, kas uzdevumu pildīšanas laikā ir izveidoti.
  
-
+        <a href="otrais.html"> UZ OTRU LAPU </a>
   <!-- The Tour Section -->
   
   <!-- The Contact Section -->
@@ -76,12 +75,13 @@ body {font-family: "Lato", sans-serif; text-align: center; }
 <br>
 
 <div class="myDiv">
+    
     <h2> GIMP </h2>
     <p> GIMP ir attēlu rediģēšanas aplikācija,kas ir bezmaksas un atvērtā koda rastra grafikas redaktors,
         ko izmanto attēlu apstrādei (retouching) un attēlu rediģēšanai, brīvas formas zīmēšanai,<br> dažādu attēlu failu 
         formātu pārkodēšanai un specializētākiem uzdevumiem. Tas ir paplašināms, izmantojot spraudņus, un skriptējams.
         Tas parasti nav paredzēts zīmēšanai, lai gan mūsu klase to izmantoja arī tādā veidā.</p>
-    <img src="images/gimp_ss.PNG">
+    <img id="GIMP" src="images/gimp_ss.PNG">
 
     <br>
     <br><!-- comment -->
@@ -105,7 +105,7 @@ body {font-family: "Lato", sans-serif; text-align: center; }
         WORD ir oficiālā tekstapstrādes programma, ko izmantojām arī mēs. Par to mums bija PD 22.11.2025 </p>
     
 
-    <img src="images/KD_word_ss.PNG">
+    <img id="WORD" src="images/KD_word_ss.PNG">
       <br>
     <br><!-- comment -->
     <br><!-- comment -->
@@ -123,7 +123,7 @@ body {font-family: "Lato", sans-serif; text-align: center; }
         Applications (VBA). Programma Excel ir daļa no Microsoft 365 un Microsoft Office programmatūras komplektiem un tiek izstrādāta kopš 1985. gada.
         Šajā tēmā mēs Pārbaudes Darbu rakstījām 24.01.2025.</p>
  
-    <img src="images/KD_excel_ss.PNG">
+    <img id="EXCEL" src="images/KD_excel_ss.PNG">
       <br>
     <br><!-- comment -->
     <br><!-- comment -->
@@ -133,6 +133,16 @@ body {font-family: "Lato", sans-serif; text-align: center; }
     <br><!-- comment -->
     <br><!-- comment -->
     <br>
+    <div class="myDiv">
+    <h2> GIF </h2>
+    <p> Mēs veidojām īsu, 4 rāmju animāciju par jebkādu tēmu. Es šo izveidoju par basketbolistu, kas veiksmīgi trāpa bumbu grozā!!</p>
+ 
+    <img id="GIF" src="images/animacija (1).gif" style="width: 40%">
+      <br>
+    <br><!-- comment -->
+    <br><!-- comment -->
+    <br>
+</div>
     
     <div class="myDiv">
         <h2> HTML </h2>
@@ -141,7 +151,7 @@ body {font-family: "Lato", sans-serif; text-align: center; }
         Ar šo joprojām strādājam ;)). PD būs par šo, kā arī viens 21.03.2024.!!</P><!-- comment -->
 
        <!-- comment -->
-        <img src="images/github_ss.PNG">
+        <img id="HTML" src="images/github_ss.PNG">
            <br>
     <br><!-- comment -->
     <br><!-- comment -->
@@ -159,7 +169,7 @@ body {font-family: "Lato", sans-serif; text-align: center; }
         neierobežotā izšķirtspējā,un tas nav saistīts ar noteiktu pikseļu skaitu, piemēram, rastra grafika.
         Tā ir bezmaksas un atvērtā koda programmatūra. Mēs šo aplikāciju izmantojām grupu darba ietvaros, lai veidotu mūsu izdomātā biznesa logo.
         </p>
-        <img src="images/inkscape_ss.PNG">
+        <img id="Inkscape" src="images/inkscape_ss.PNG">
     </div>
       <br>
     <br><!-- comment -->
@@ -169,7 +179,7 @@ body {font-family: "Lato", sans-serif; text-align: center; }
         <h2> TinkerCad</h2>
         <p> Tinkercad ir bezmaksas tiešsaistes 3D modelēšanas programma, kas darbojas tīmekļa pārlūkprogrammā.
             Mēs šo lietojām, lai veidotu puzli - mūsu kompānijas suvenīru </p>
-        <img src="images/puzlegabalins_zvirbule.jpg">
+        <img id="TinkerCad" src="images/puzlegabalins_zvirbule.jpg">
           <br>
     <br><!-- comment -->
     <br><!-- comment -->
@@ -179,11 +189,10 @@ body {font-family: "Lato", sans-serif; text-align: center; }
     <br><!-- comment -->
     <br><!-- comment -->
     <br><!-- comment -->
-    <div class="myDiv"> 
+    <div class="myDiv" id="Video"> 
         <h2> Video</h2>
-    Taisījām arī video. Veidots ar wave.video.
-    Diemžēl nemāku lasīt instrukcijas un, tāpēc šajā 
-    video netika iesaistīta individuālās tēmas reklāma, jo es nezināju, ka tādai jābūt
+        Taisījām arī video. Veidots ar wave.video.<br>
+    <video style="30%" controls> <source src="images/video.mp4" type="video/mp4"> </video>
      <br>
     <br><!-- comment -->
     <br><!-- comment -->
