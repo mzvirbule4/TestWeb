@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Gaidot dzimšanas dienu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> Gaidot dzimšanas dienu...</h1>
+        <hr><!-- comment -->
+        <form>
+            <label>Ievadi pilnu datumu, kad tev būs tuvākā dzimšanas diena: </label> <br><!-- comment -->
+            <label> Gads: <input type="text" name="gads"></label> <br><!-- comment -->
+            <label> Mēnesis: <input type="text" name="menesis"></label> <br>
+            <label> Diena: <input type="text" name="diena"></label> <br> <br><!-- comment -->
+            <button type="button" onclick="dienas()"> Aprēķināt dienu skaitu līdz dzimšanas dienai! </button><!-- comment -->
+            <input type="text" name="rezultats" id="rezultats" > <!-- comment -->
+            
+            
+        </form>
+        <!-- comment -->
+        
+        <script>
+            function dienas()  {
+                let gads=document.GetElementsByName("gads")[0].value;
+                let menesis=document.GetElementsByName("menesis")[0].value;
+                let diena=document.GetElementsByName("diena")[0].value;
+                
+                let dzd= new Date(gads, menesis - 1, diena);
+                let sodien= new date();
+                let starpiba=Math.ceil((dzd-sodien)/(1000*60*60*24));
+                
+                if( starpiba < 0){
+                    dzd.setFullYear(sodien.getFullYear()+1); 
+                    starpiba=Math.ceil((dzd-sodien)/(1000*60*60*24));
+                }
+                document.GetElementsByName("rezultats").innerHTML="Līdz svētkiem atlikušas "+ starpiba +" dienas!";
+            }
+        </script>
+            
+            
+            
+       
+    </body>
+</html>
